@@ -1,3 +1,13 @@
+# A Note on This Repository
+This fork of the StreamingRec repository contains the new sequential pattern mining algorithm `SeqPatSimplified`, which was created in the context of the following research paper:
+
+Mozhgan Karimi, Boris Cule, and Bart Goethals. 2019. On-the-Fly News Recommendation Using Sequential Patterns. In *Proceedings of the 7th International Workshop on News Recommendation and Analytics (INRA 2019), in conjunction with RecSys 2019, September 19, 2019, Copenhagen, Denmark*. *forthcoming*.
+
+The algorithm in question can be found under: `src/main/java/tudo/streamingrec/algorithms/`.
+The respective configuration files that were used in the experiments in the paper can be found under 
+`config/`. 
+Below, the original manual of the StreamingRec framework follows.
+
 # StreamingRec 
 An evaluation framework that simulates a real-life recommendation scenario, in which recommendation 
 algorithms receive user clicks and newly published articles chronologically. After each 
@@ -118,7 +128,7 @@ is called. The final metric value shall be returned when the method `double getR
 In any case the value of the class attribute `k` shall be observed.
 
 ## License
-Copyright \[2017,2018\] \[Mozhgan Karimi, Michael Jugovac, Dietmar Jannach]
+Copyright \[2017,2018,2019\] \[Mozhgan Karimi, Michael Jugovac, Dietmar Jannach]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
