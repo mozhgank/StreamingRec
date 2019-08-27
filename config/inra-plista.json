@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Random",
+		"algorithm": ".Random"
+	},
+	{
+		"name": "Most Popular",
+		"algorithm": ".MostPopular"
+	},
+	{
+		"name": "Recently Popular",
+		"algorithm": ".RecentlyPopular",
+		"filterTime": 2100000
+	},
+	{
+		"name": "Co-Occurrence",
+		"algorithm": ".FastSessionCoOccurrence",
+		"wholeSession": false
+	},
+	{
+		"name": "V-SkNN",
+		"algorithm": ".KNearestNeighbor",
+		"filterNumber": 3500,
+		"k": 150,
+		"scoringMethod": "DecayVector"
+	},
+	{
+		"name": "Seq",
+		"algorithm": ".SeqPatSimplified",
+		"confidenceType": true,
+		"recentClickedFiltering": false,
+		"windowSize": 5,
+		"confidenceThreshold": 0.03,
+		"supportThreshold": 0
+	},
+	{
+		"name": "Seq-r",
+		"algorithm": ".SeqPatSimplified",
+		"confidenceType": true,
+		"recentClickedFiltering": true,
+		"bufferSize": 9000,
+		"windowSize": 5,
+		"confidenceThreshold": 0.03,
+		"supportThreshold": 0
+	},
+	{
+		"name": "Seq-p",
+		"algorithm": ".SeqPatSimplified",
+		"confidenceType": false,
+		"recentClickedFiltering": false,
+		"windowSize": 5,
+		"confidenceThreshold": 0,
+		"supportThreshold": 0
+	},
+	{
+		"name": "Seq-pr",
+		"algorithm": ".SeqPatSimplified",
+		"confidenceType": false,
+		"recentClickedFiltering": true,
+		"bufferSize": 9000,
+		"windowSize": 5,
+		"confidenceThreshold": 0,
+		"supportThreshold": 0
+	}
+]
